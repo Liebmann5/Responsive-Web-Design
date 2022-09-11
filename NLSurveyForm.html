@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Nick Liebmann Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve my skills</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <!--https://blog.teamtreehouse.com/to-close-or-not-to-close-tags-in-html5-->
+        <label id="name-label" for="name">Name: <input required id="name" type="text" placeholder="Enter your name" /></label>
+        <label id="email-label" for="email">Email: <input required id="email" type="email" placeholder="Enter your Email" /></label>    
+        <label id="company-label" for="company">Company Name: <input required id="company" type="text" placeholder="Enter your company" /></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Pick the job position that best describes yours</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Software Engineer</option>
+          <option value="2">Recruiter</option>
+          <option value="3">HR</option>
+          <option value="">Other</option>
+        </select>
+        <label>Are engineers the only candidates you currently handle?</label>
+        <label for="yes"><input id="yes" type="radio" name="solely-engineers" value="yes"> Yes</label>
+        <label for="half"><input id="half" type="radio" name="solely-engineers" value="half"> Half</label>
+        <label for="no"><input id="no" type="radio" name="solely-engineers" value="no"> No</label>
+        <label for="number" id="number-label">Years of Experience: <input id="number" type="number" min="0" max="99" placeholder="0-99"></label>
+      </fieldset>
+
+      <fieldset>
+        <article>Please select all the topics you can hold a productive conversation in?</article>
+        <label for="frontend"><input id="frontend" type="checkbox" name="topic" value="frontend" /> Frontend</label>
+        <label for="backend"><input id="backend" type="checkbox" name="topic" value="backend" /> Backend</label>
+        <label for="databases"><input id="databases" type="checkbox" name="topic" value="databases" /> Databases</label>
+        <label for="mathematics"><input id="mathematics" type="checkbox" name="topic" value="mathematics"/> Mathematics </label>
+        <label for="physics"><input id="physics" type="checkbox" name="topic" value="physics"/> Physics</label>
+        <label for="architecture"><input id="architecture" type="checkbox" name="topic" value="architecture"/> Architecture</label>
+        <label for="security"><input id="security" type="checkbox" name="topic" value="security"/> Security</label>
+        <label for="cloud"><input id="cloud" type="checkbox" name="topic" value="cloud"/> Cloud Computing</label>
+        <label for="hardware"><input id="hardware" type="checkbox" name="topic" value="hardware" /> Hardware</label>
+        <label for="os"><input id="os" type="checkbox" name="topic" value="os" /> Operating Systems</label>
+        <label for="networks"><input id="networks" type="checkbox" name="topic" value="networks" /> Networks</label>
+        <label for="worthless"><input id="worthless" type="checkbox" name="topic" value="worthless" /> Crayons</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="info">Anything you'd like to tell me or add?
+          <textarea id="info" name="info" row="2" cols="30" placeholder="Please tell me I'd absolutely love to hear what a recruiter has to say lol"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
