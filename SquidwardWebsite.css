@@ -1,0 +1,37 @@
+main {
+ text-align: center;
+ margin: 30px 8px;
+ padding: 15px;
+ border-radius: 5px;
+ background: #eee;
+}
+
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqg48tL3KR0s4it5BlNdSMYVqETRfUoGs3fw&usqp=CAU");
+}
+
+#image {
+  height: auto;
+  max-width: 100%;
+  justify-items: center;
+}
+
+div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: 	#bbdfd1;
+  width: 100%;
+  padding: 30px 0px;
+  margin: 30px 0px;
+  border: 100%;
+}
+
+#tribute-info {
+  margin-top: 30px;
+  font-weight: 50px;
+  margin: 20px 0px;
+}
