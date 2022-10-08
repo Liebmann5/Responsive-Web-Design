@@ -69,6 +69,13 @@ section {
   padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
+/*Step 45*/
+/*span:not(.sr-only)  - target any of your "span" elements that do not have the "sr-only" class | This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten.*/
+/*span:not(.sr-only) - got rid of this because we added the !important keyword*/
+span {
+  font-weight: normal;
+}
+
 table {
   border-collapse: collapse;
   border: 0;
